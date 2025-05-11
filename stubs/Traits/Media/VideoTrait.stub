@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Traits\Media;
+
+use AbdullahMateen\LaravelHelpingMaterial\Traits\Media\VideoTrait as BaseVideoTrait;
+
+trait VideoTrait
+{
+    use BaseVideoTrait;
+}

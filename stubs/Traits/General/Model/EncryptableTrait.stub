@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Traits\General\Model;
+
+use AbdullahMateen\LaravelHelpingMaterial\Traits\General\Model\EncryptableTrait as BaseEncryptableTrait;
+
+trait EncryptableTrait
+{
+    use BaseEncryptableTrait;
+}
+
+
+

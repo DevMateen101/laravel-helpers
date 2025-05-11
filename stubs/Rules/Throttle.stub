@@ -1,0 +1,50 @@
+<?php
+
+namespace App\Rules;
+
+use Closure;
+use AbdullahMateen\LaravelHelpingMaterial\Rules\Throttle as BaseRule;
+
+class Throttle extends BaseRule
+{
+
+    public function validate(string $attribute, mixed $value, Closure $fail): void
+    {
+        if (!$this->passes($attribute, $value)) $fail($this->message());
+    }
+
+    public function passes($attribute, $value)
+    {
+        if ($this->hasTooManyAttempts()) {
+            return false;
+        }
+
+        $this->incrementAttempts();
+
+        return true;
+    }
+
+    public function message()
+    {
+        return __($this->message);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

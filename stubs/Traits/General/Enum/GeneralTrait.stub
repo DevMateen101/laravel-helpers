@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Traits\General\Enum;
+
+use ReflectionClass;
+use AbdullahMateen\LaravelHelpingMaterial\Traits\General\Enum\GeneralTrait as BaseGeneralTrait;
+
+trait GeneralTrait
+{
+    use BaseGeneralTrait;
+}

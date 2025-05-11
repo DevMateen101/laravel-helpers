@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Traits\Media;
+
+use AbdullahMateen\LaravelHelpingMaterial\Traits\Media\AudioTrait as BaseAudioTrait;
+
+trait AudioTrait
+{
+    use BaseAudioTrait;
+}

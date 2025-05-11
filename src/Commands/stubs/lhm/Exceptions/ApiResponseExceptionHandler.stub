@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Exceptions;
+
+use AbdullahMateen\LaravelHelpingMaterial\Exceptions\ApiResponseExceptionHandler as BaseException;
+
+class ApiResponseExceptionHandler extends BaseException
+{
+    //
+}

@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Traits\General\Model;
+
+use AbdullahMateen\LaravelHelpingMaterial\Traits\General\Model\ModelFetchTrait as BaseModelFetchTrait;
+
+trait ModelFetchTrait
+{
+    use BaseModelFetchTrait;
+}

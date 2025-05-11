@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Traits\General\Model;
+
+use AbdullahMateen\LaravelHelpingMaterial\Traits\General\Model\ValidationTrait as BaseValidationTrait;
+
+trait ValidationTrait
+{
+    use BaseValidationTrait;
+}

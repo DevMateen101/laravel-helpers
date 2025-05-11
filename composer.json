@@ -1,0 +1,58 @@
+{
+    "name": "abdullah-mateen/laravel-helping-material",
+    "description": "Laravel helper functions and general helping material",
+    "keywords": ["laravel", "helpers"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdullah Mateen",
+            "email": "abdullahmateen101@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-fileinfo": "*",
+        "ext-gd": "*",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "google/apiclient": "^2.18",
+        "intervention/image": "^3.3"
+    },
+    "require-dev": {
+        "laravel/framework": "^10.0|^11",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AbdullahMateen\\LaravelHelpingMaterial\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AbdullahMateen\\LaravelHelpingMaterial\\LaravelHelpingMaterialServiceProvider"
+            ],
+            "aliases": {
+                "MediaService": "AbdullahMateen\\LaravelHelpingMaterial\\Facades\\MediaServiceFacade"
+            }
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

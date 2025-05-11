@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Traits\General\Model;
+
+use AbdullahMateen\LaravelHelpingMaterial\Traits\General\Model\ScopeTrait as BaseScopeTrait;
+
+
+trait ScopeTrait
+{
+    use BaseScopeTrait;
+}

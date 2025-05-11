@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Traits\Api;
+
+use AbdullahMateen\LaravelHelpingMaterial\Traits\Api\ApiResponseTrait as BaseApiResponseTrait;
+
+trait ApiResponseTrait
+{
+    use BaseApiResponseTrait;
+}

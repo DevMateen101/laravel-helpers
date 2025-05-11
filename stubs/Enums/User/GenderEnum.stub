@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Enums\User;
+
+use AbdullahMateen\LaravelHelpingMaterial\Interfaces\ColorsInterface;
+use AbdullahMateen\LaravelHelpingMaterial\Traits\General\Enum\GeneralTrait;
+
+enum GenderEnum: string implements ColorsInterface
+{
+    use GeneralTrait;
+
+    case Male = 'm';
+    case Female = 'f';
+    case Other = 'o';
+
+    /**
+     * @return string
+     */
+    public function toString(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function color(): string
+    {
+        return match ($this) {
+            self::Male   => self::DEEPSKYBLUE_CLASS,
+            self::Female => self::HOTPINK_CLASS,
+            self::Other  => self::SECONDARY_CLASS,
+        };
+    }
+
+}
